@@ -1,0 +1,32 @@
+
+
+ LOG file opened at 02/10/14 22:52:32
+
+KUP-05007:   Warning: Intra source concurrency disabled because the preprocessor option is being used.
+
+Field Definitions for table EXTERNAL_HDFS
+  Record format DELIMITED, delimited by 0A
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    CUSTOMER_ID                     CHAR (4000)
+      Terminated by "2C"
+      Trim whitespace same as SQL Loader
+    CHECKING_AMOUNT                 CHAR (4000)
+      Terminated by "2C"
+      Trim whitespace same as SQL Loader
+    BANK_FUNDS                      CHAR (4000)
+      Terminated by "2C"
+      Trim whitespace same as SQL Loader
+    MONTHLY_CHECKS_WRITTEN          CHAR (4000)
+      Terminated by "2C"
+      Trim whitespace same as SQL Loader
+    AMOUNT_AUTOM_PAYMENTS           CHAR (4000)
+      Terminated by "2C"
+      Trim whitespace same as SQL Loader
+KUP-04095: preprocessor command /opt/oracle/orahdfs-2.3.0/bin/hdfs_stream encountered error "OSCH: Error processing URI hdfs://bigdatalite.localdomain:8020/user/oracle/customer_averages/part-r-00000
+Call From bigdatalite.localdomain/127.0.0.1 to bigdatalite.localdomain:8020 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+Connection refused
+"

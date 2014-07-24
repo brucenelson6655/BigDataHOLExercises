@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<locationFile>
+    <header>
+        <version>1.0</version>
+        <fileName>osch-20140329050433-3042-1</fileName>
+        <createDate>2014-03-29T17:04:33</createDate>
+        <publishDate>2014-03-29T05:04:34</publishDate>
+        <productName>Oracle SQL Connector for HDFS Release 2.3.0 - Production</productName>
+        <productVersion>2.3.0</productVersion>
+    </header>
+    <uri_list>
+        <uri_list_item size="29193" compressionCodec="">hdfs://bigdatalite.localdomain:8020/user/oracle/customer_averages/part-r-00000</uri_list_item>
+    </uri_list>
+</locationFile>
