@@ -12,6 +12,11 @@ startup
 exit
 ENDOFSQL
 
-cp /home/oracle/scripts/StopDB.desktop /home/oracle/Desktop/.
+sudo service impala-server start
+sudo service impala-catalog start
+sudo service impala-state-store start
+sudo service solr-server start
+
+cp /home/oracle/exercises/setup/StopHOL.desktop /home/oracle/Desktop/.
 
 fi

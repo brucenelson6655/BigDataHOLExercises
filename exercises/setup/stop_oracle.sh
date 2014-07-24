@@ -8,4 +8,9 @@ shutdown immediate
 exit
 ENDOFSQL
 
-rm /home/oracle/Desktop/StopDB.desktop
+sudo service solr-server stop
+sudo service impala-state-store stop
+sudo service impala-catalog stop
+sudo service impala-server stop
+
+rm /home/oracle/Desktop/StopHOL.desktop

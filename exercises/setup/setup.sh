@@ -75,12 +75,8 @@ then
   /home/oracle/scripts/start_oracle.sh
   sqlplus /nolog @setup
 else 
-  cd ~/scripts
-  mv start_oracle.sh start_oracle.old.sh
 
-  cp ~/exercises/setup/start_oracle.sh .
-  cp ~/exercises/setup/stop_oracle.sh .
-  cp ~/exercises/setup/StopDB.desktop .
+cp ~/exercises/setup/StartHOL.desktop /home/oracle/Desktop/.
 
   /home/oracle/scripts/stop_oracle.sh
   /home/oracle/scripts/start_oracle.sh
