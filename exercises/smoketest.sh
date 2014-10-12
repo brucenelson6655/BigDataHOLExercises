@@ -1,11 +1,5 @@
 #!/bin/sh
 
-echo "####################################################################"
-echo "Resetting Oracle Database"
-echo "####################################################################"
-~/scripts/stop_oracle.sh
-~/scripts/start_oracle.sh
-
 cd wordCount
 echo "####################################################################"
 basename `pwd`
@@ -74,6 +68,13 @@ basename `pwd`
 echo "####################################################################"
 sh ./cleanup.sh
 sh ./cheat.sh
+
+cd ../spark
+echo "####################################################################"
+basename `pwd`
+echo "####################################################################"
+sh ./cheat.sh
+
 
 echo Check HUE job admin to be sure all jobs ran successfully 
 echo "FILE should exist in HDFS to confirm all services were working"

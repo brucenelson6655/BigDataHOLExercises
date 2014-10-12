@@ -1,9 +1,5 @@
 #!/bin/sh
 
-sqlplus BDA/welcome1 <<EOF
-truncate table odi_hive;
-EOF
-
 rm -f *.log
 rm -rf TempStatsStore
 
@@ -15,7 +11,7 @@ drop table e_consolidated_buffer;
 exit;	
 EOF
 
-echo "Dont forget to delet the interfaces created in ODI"
+echo "Dont forget to delete the interfaces created in ODI"
 
 
 

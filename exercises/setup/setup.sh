@@ -66,16 +66,21 @@ else
   exit
 fi
 
+sh ~/exercises/setup/set_perms.sh
+
 if [ -e /opt/bin/services ]
 then 
   cd ~/exercises/setup
   cp HOLStart.desktop /home/oracle/Desktop/.
+  cp StartHOL.desktop /home/oracle/Desktop/.
   cp ~/exercises/setup/stop_oracle_noicon.sh /home/oracle/scripts/stop_oracle.sh
+  cp ~/exercises/setup/start_oracle.sh /home/oracle/scripts/start_oracle.sh
   /home/oracle/scripts/stop_oracle.sh
   /home/oracle/scripts/start_oracle.sh
   sqlplus /nolog @setup
 else 
 
+cp ~/exercises/setup/stop_oracle_noicon.sh /home/oracle/scripts/stop_oracle.sh
 cp ~/exercises/setup/StartHOL.desktop /home/oracle/Desktop/.
 
   /home/oracle/scripts/stop_oracle.sh

@@ -10,4 +10,3 @@ create table consolidated_buffer (customer_id string, credit_card_limits int, cr
 exit;	
 EOF
 
-./additional/createTable.sh

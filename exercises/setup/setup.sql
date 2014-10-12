@@ -25,7 +25,6 @@ connect BDA/welcome1
 create or replace directory EXTERNAL_DIR as '/home/oracle/exercises/OSCH/etc';
 
 @ORA_CRM
-@ODI_HIVE
 
 exit
 
